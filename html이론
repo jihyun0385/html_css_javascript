@@ -1,0 +1,128 @@
+# 1. HTML 문서의 기본 구조
+
+
+### 1. 브라우저 에게 정보를 주는 <head> 태그**
+
+- 문서 관련 정보입력, 웹 브라우저 화면에는 보이지 않음
+- 문서에서 사용할 외부 파일 링크
+
+1) 문자 세트등 문서정보 들어 있는 <meta> 태그 
+
+: 한글로 된 내용을 표시하기 위해서 UFT-8 문자 세트 사용 
+
+이외에도 다양한 문서정보를 지정 
+
+웹 문서의 키워드, 설명, 제작자 등 
+
+
+### 2. 목록만들기
+
+1) <h1> </h1> ~ h6이 있는데 제목을 사용할때 사용하며 크기가 달라짐 h1이 가장 큼 
+
+2) <p>  : 하나의 단락 
+
+3) <em> : 강조
+
+4) <strong> : **진하게 강조** 
+
+5) <br> : 줄바꿈
+
+6) <b> : 진하게 
+
+7) <hr> : 영역구분 및 분위기 전환? 
+
+8) <ol> : orderd list 순서가 있는 목록 
+                <ol type =”a” > 인 경우 a,b,c 순서 사용
+               순서가 없는 목록인 경우 <ul> 로 사용 
+
+9) <li> : 순서 
+
+10)<a href=”연결장소”></a> :  하이퍼링크 
+
+<a href=”연결장소” target=”blank”></a> : 링크된 페이지 새로운 탭 
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html 연습하기 2023.08.20</title>
+  </head>
+  <body>
+    <h1>웹 문서 만들기</h1>
+    <em> 강조 하기 </em>
+    <strong> 진하게 보이기 </strong>
+    <b> 진해!</b>
+    <hr />
+    <ol>
+      <li>첫번째</li>
+      <li>두번째</li>
+    </ol>
+    <ol type="A">
+      <li>a</li>
+      <li>b</li>
+    </ol>
+  </body>
+</html>
+```
+
+### 3. 표만들기
+
+1) <tr> : 행
+
+    1_1) <td> : 셀   
+
+2) <th> : 제목 
+
+
+### 4. 오디오와 비디오 삽입
+
+<audio> 태그, <video> 태그 
+
+| 속성 | 설명 |
+| --- | --- |
+| controls | 플레이어 화면에 컨트롤 바를 표시  |
+| autoplay | 자동으로 실행 |
+| loop | 반복재생 |
+| muted | 소리제거 |
+| preload | 페이지 불러올때 파일을 어떻게 로딩 사용할 수 있는 값은 auto, metadata, none / 기본적으로는 preload-”auto”  |
+| width, height | 비디오 플레이어의 너비와 높이 지정 하나만 지정하면 나머지는 자동으로 계산해서 표기  |
+| poster-”파일이름” | <video> 태그에서 사용하는 속성, 비디오 재생되기 전까지 화면에 표시될 포스터이미지를 지정 |
+
+1) <img src=”하위폴더이름 “ alt =”대체텍스트”> : 이
+
+2) <audio src =”하위폴더이름” controls(재생막대> 
+
+3)<video src=”     “ controls(재생막대) width(가로)=” “ >
+
+
+
+### 5. 입력양식작성하기
+
+1) <input type =”radio” name=”이름” value = “서버에전송될값”>  → 라디오버튼 
+
+2) <input type =”checkbox ” value = “서버에전송될값” 
+
+3) 폼 양식 만들기 (input 사용하여 텍스트, 데이트 등 입력받기) 
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼양식 만들기</title>
+</head>
+<body>
+    <form action="">
+    <label>아이디 : <input type="text"></label>
+    
+    <label for="password">비밀번호 : </label>
+    <input type="password" password="password"></label>
+    <input type = "submit" value="로그인">
+    </form>
+</body>
+</html>
+```
