@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정기구독주문표</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+        h2 {
+            font-family: 'Dongle', sans-serif;
+            font-size: 40pt;
+        }
+
+        table {
+            caption-side: top;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: 'Dongle', sans-serif;
+            font-size: 20pt;
+          
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> 정기구독주문표</h2>
+    <h6> : 메뉴는 전날 선택하여 주문합니다.</h6>
+    <table>
+        <thead>
+            <tr>
+                <th>메뉴갯수</th>
+                <th>배송횟수</th>
+                <th>정가</th>
+                <th>할인가</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>12</td>
+                <td>163,000원</td>
+                <td>158,000원</td>
+
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>202,000원</td>
+                <td>180,000원</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
