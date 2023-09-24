@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        #wrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 200px);
+            grid-template-rows: minmax(50px, auto);
+        }
+        .items{
+            padding: 10px;
+            background-color: whitesmoke;
+        }
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id ="wrapper">
+       <div class="item"> abcdef</div>
+       <div class = "items">ghrjk</div>
+       <div class = "items">가나다라</div>
+       <div class = "items">마바사아</div>
+       <div class = "items">자카파아</div>
+</body>
+</html>
