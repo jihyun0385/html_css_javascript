@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 연습하기</title>
+</head>
+
+<body>
+    <script>
+        var session = prompt("관심 수업을 선택해 주세요. 1. 마케팅 2. 개발 3. 디자인");
+
+        switch (session) {
+            case "1": document.write("마케팅 수업은 201호에서 진행됩니다.");
+                break;
+
+            case "2": document.write("개발 수업은 202호에서 진행됩니다.");
+                break;
+
+            case "3": document.write("디자인 수업은 203호에서 진행됩니다.");
+                break;
+
+            default: alert("진행되지 않는 수업입니다. 1. 마케팅, 2. 개발, 3. 디자인 수업만 수강가능합니다.")
+        }
+
+
+    </script>
+</body>
+
+</html>
