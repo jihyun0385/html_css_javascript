@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+}
+
+div{
+    display: inline-block;     /*가로정렬*/
+    border: 1px solid black; /*테두리선*/
+    margin: 2px;  /*여백*/
+    padding: 0px 10px 10px 10px; /*안쪽여백*/
+    font-size: small;
+}
