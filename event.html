@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트처리</title>
+    <link rel="stylesheet" href="eventsty.css">
+</head>
+<body>
+    <ul>
+        <li><a href ="#" onclick="changeColor('Green')"> Green</a></li>
+        <li><a href ="#" onclick="changeColor('Orange')"> Orange</a></li>
+        <li><a href ="#"onclick="changeColor('Purple')"> Purple</a></li>
+    </ul>
+    <div id="result"></div>
+    
+    <script>
+        function changeColor(color){
+            var result = document. querySelector('#result');
+            result.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
