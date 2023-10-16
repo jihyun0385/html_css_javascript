@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 수직 가운데 정렬 추가 */
+    font-size: 20px;
+}
+
+.logo {
+    margin: 0;
+    font-family: 'Young Serif', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px; /* 서브 제목의 글꼴 크기 설정 */
+    margin-top: 5px; /* 서브 제목 위쪽 여백 추가 */
+}
+
+.userpage {
+    margin-right: 20px; /* 로그인 및 회원가입 오른쪽 여백 추가 */
+}
+
+.userpage h6 a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.userpage{
+    margin-right: 20px;
+}
+
+.userpage h6 a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
+    margin-top: 0%;
+}
+
+
+nav{
+    width: 100%;
+    background-color: beige;
+    margin-top: 10px;
+}
+
+.menuitem {
+    display: flex;
+    justify-content: space-around;
+    text-decoration-line: none;
+    list-style: none;
+}
+
+.menuitem li{
+    margin: 0;
+    padding: 0;
+      }
+      
+.menuitem a{
+    text-decoration: none;
+    color: black;
+}
+ .banner{
+        border: 2px solid #333; 
+        height: 200px;   
+        width: 100%;  
+        overflow: hidden; /* 이미지 넘치는 부분 감추기 */
+}
+
+/* .banner img {
+   max-width: 100%;
+   max-height: 100%;
+} */
+
