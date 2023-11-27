@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="todolist.css">
+
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var currentDate = new Date();
+            var formattedDate = (currentDate.getMonth() + 1) + "월 " + currentDate.getDate() + "일";
+            var titleElement = document.getElementById("todoList");
+            titleElement.textContent =  formattedDate + " 할일" ;
+
+            $('#input').change(function () {
+                var input = $(this).val();
+                $('ul').append('<li>' + input + '</li>');
+                $(this).val('');
+            });  
+        });
+        
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <div class="title" id="todoList"></div>
+    <div class="container">
+        <input type="text" id="input" placeholder="할일을 추가하세요.">
+        <ul></ul>
+    </div>
+</body>
+
+</html>
